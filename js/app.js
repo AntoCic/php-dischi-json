@@ -10,6 +10,7 @@ createApp({
 		getDisc() {
 			axios.get('./server.php').then((res) => {
 				this.discs = res.data;
+				// console.log(this.discs);
 			})
 		},
 	},
